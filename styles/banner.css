@@ -61,13 +61,18 @@
     color: var(--laranja-claro);
 }
 
-.slide__legenda {
+.slide__legenda,
+.slide__legenda2 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
-    color: var(--branco-principal);
-    margin-bottom: 1em;
+    color: var(--laranja-claro);
+    margin-bottom: 0.5em;
     
+}
+
+.slide__legenda2{
+    color: var(--branco-principal);
 }
 
 .lista-banner {
