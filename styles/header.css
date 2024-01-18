@@ -1,0 +1,229 @@
+
+.cabecalho__menu-hamburguer {
+    width: 40px;
+    height: 40px;
+    background-image: url("../assets/img/Menu-white.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    display: inline-block;
+    margin: 1.5em 0em 1em 1em;
+}
+
+
+.cabecalho {
+    background-color: var(--marrom);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    margin: 0;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__imagem {
+    display: none;
+
+    
+}
+
+.cabecalho__imagem__mobile {
+    width: 82px;
+    margin-right: 0.5em;
+}
+
+    
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 65vw;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco-principal);
+
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.lista-menu__link {
+    color: var(--laranja-claro);
+    background: var(--laranja-claro);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+
+}
+
+.container__botao {
+    display: none;
+}
+
+.container__titulo {
+    display: none;
+}
+
+.opções {
+    display: none;
+}
+
+.opções__link-imagem {
+    display: none;
+}
+
+.container__botao:checked ~.container__rotulo > .cabecalho__menu-hamburguer {
+    background-image: url(../assets/img/Menu-brown.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    margin: 0.5em 0em 0em 0.5em;
+
+}
+
+.container__botao:checked ~.container__rotulo {
+    margin: 0;
+    background: var(--laranja-claro);
+    padding: 1em 1em 1em 0.5em;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__imagem {
+        padding: 0.7em;
+        width: 80px;
+        display: block;
+        
+    }
+    .cabecalho__imagem__mobile {
+        display: none;
+    }
+
+    .container__titulo,
+    .container__titulo--negrito {
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+    .opções{
+        display: flex;
+
+    }
+    
+    .opções__link,
+    .opções__item {
+        color: var(--preto);
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .opções__link {
+        text-decoration: none;
+    }
+
+    .cabeçalho__imagem-transparente {
+        display: none;
+    }
+
+    .cabecalho__menu-hamburguer{
+        display: none;
+    }
+
+    .opções__botao:checked ~ .lista-menu {
+        display: block;
+        width: auto;
+
+    }
+
+    .opções__botao {
+        display: none;
+    }
+
+    .opções__botao:checked~ .opções__rotulo >.opções__item {
+        background: var(--marrom-degrade);
+        color: var(--branco-principal);
+        text-decoration: none;
+    }
+
+    .opções__item {
+        padding: 2em 1em;
+    }
+
+    .lista-menu__item:hover {
+        background: var(--marrom-degrade);
+    }
+
+    .lista-menu__item:hover>.lista-menu__link {
+        -webkit-text-fill-color: var(--branco-principal);
+        text-decoration: none;
+    }
+
+    .opções__link:hover {
+        font-weight: 500; /* Ou outros estilos desejados */
+        text-decoration: underline; /* Ou outros estilos desejados */
+    }
+    .opções__link-imagem:hover {
+        font-weight: 500; /* Ou outros estilos desejados */
+        text-decoration: underline; /* Ou outros estilos desejados */
+    }
+
+    .cabecalho__imagem:hover {
+
+        transform: scale(1.2);
+    }
+
+    .opções__item:hover {
+        font-weight: 500;
+        text-decoration: underline;
+    }
+
+    
+}
+
+@media screen and (min-width: 1728px) {
+
+    .opções__link-imagem {
+        display: flex;
+        align-items: center;
+        margin-right: 80px;
+        text-decoration: none;
+        color: var(--preto);
+        font-size: 20px;
+    }
+
+    .container {
+        margin-left: 4em;
+    }
+
+    .opções {
+        margin-right: auto;
+    }
+
+}

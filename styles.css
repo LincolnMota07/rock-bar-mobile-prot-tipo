@@ -1,0 +1,30 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/informações.css");
+@import url("styles/footer.css");
+
+
+:root {
+
+    --cor-de-fundo: #EBECEE;
+    --branco-principal: #FFF;
+    --marrom: #623e2a;
+    --fonte-principal: "Kalnia";
+    --fonte-secundaria: "Montserrat";
+    --marrom-degrade: linear-gradient(360deg, #623e2a 35.49%, #000000 165.37%);
+    --laranja-claro: #F08D1F;
+    --amarelo:#F0C31F;
+    --preto:#000000;
+    --laranja: #F0441F;
+    --amarelo-escuro: #F0AA1F;
+
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size:16px;
+    font-weight: 400;
+}
+
