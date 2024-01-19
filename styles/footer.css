@@ -1,7 +1,8 @@
 
 .rodapé{
-    background: var(--marrom-degrade);
+    background: var(--marrom-degrade2);
     padding: 1em ;
+    font-family: var(--fonte-principal);
 }
 
 .rodapé__titulo {
@@ -29,7 +30,7 @@
     width: 70px;
    }
    #logo__casamentos {
-    width: 120px;
+    width: 50px;
    }
 
    .rodapé__texto {
@@ -49,5 +50,105 @@
     display: flex;
     justify-content: space-around;
     font-size: 14px;
+
+   }
+
+   .dev {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   }
+   .dev__link {
+    margin: 2em 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--branco-principal);
+   }
+
+
+   @media screen and (min-width: 1024px) {
+    #logo__rock {
+        width: 100px;
+       }
+       #logo__wpp {
+        width: 130px;
+       }
+       #logo__insta {
+        width: 120px;
+       }
+       #logo__casamentos {
+        width: 100px;
+       }
+
+       .rodapé__titulo {
+        font-size: 28px;
+
+       }
+
+       .rodapé__link {
+        font-size: 20px;
+       }
+
+       .dev {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+       }
+       .dev__link {
+        margin: 2em 0;
+        font-size: 18px;
+        color: var(--branco-principal);
+       }
+
+       .rodapé__img:hover {
+        transform: scale(1.1);
+
+       }
+
+       .rodapé__link:hover{
+
+        color: var(--laranja);
+        
+       }
+       .dev__link:hover {
+        color: var(--laranja);
+       }
+
+   }
+
+   @media screen and (min-width: 1728px) {
+
+    #logo__rock {
+        width: 150px;
+       }
+       #logo__wpp {
+        width: 190px;
+       }
+       #logo__insta {
+        width: 180px;
+       }
+       #logo__casamentos {
+        width: 150px;
+       }
+
+       .rodapé__titulo {
+        font-size: 28px;
+
+       }
+
+       .rodapé__link {
+        font-size: 36px;
+        margin: 2em 0;
+       }
+
+       .dev {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+       }
+       .dev__link {
+        margin: 2em 0;
+        font-size: 30px;
+       }
 
    }

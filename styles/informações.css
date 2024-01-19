@@ -1,39 +1,36 @@
 .informações {
     background-color: var(--branco-principal);
     padding: 1.5em 1em;
-    text-align: justify;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    color: var(--marrom);
 }
 
 .informações__titulo, .informações__texto{
     font-size: 1.125em;
     font-weight: 500;
-    color: var(--marrom);
+    
 }
 
 .informações__texto {
     margin: 0.5em 0 0.5em 0;
-    font-weight: 400;
+    
 }
 .informações__titulo{
     font-size: 1.125em;
-    font-weight: 500;
-
-}
-
-.informações__email {
-    font-size: 0.85em;
-    color: var(--azul);
-    border-radius: 24px;
-    border: 1px solid var(--azul);
-    width: 90%;
-    padding: 1em;
+    font-weight: 700;
     
+}
+.informações__titulo2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 1.5em;
 }
 
 .informações__botao {
     text-align: center;
     text-decoration: none;
-    padding: 1em 0;
+    padding: 1em 0 ;
  
 }
 
@@ -56,53 +53,83 @@
     padding: 3.5em;
     font-family: var(--fonte-principal);
 }
+#mapa {
+    height: 400px; /* ou a altura desejada */
+    width: 100%;   /* ou a largura desejada */
+  }
+  
 
 @media screen and (min-width: 1024px) {
     .informações {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
+        align-items:flex-start;
         
     }
 
-    .informações__email {
-        font-size: 16px;
-        width: 30%;
-    }
     .informações__descrição {
-        margin-right: 5em;
         width: 30%;
         text-align: justify;
     }
 
 
     .informações__titulo {
-        font-size: 24px;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 1em;
         
         
+    }
+
+    .informações__texto{
+        font-size: 20px;
+        font-weight: 500;
+        
+    }
+
+    .informações__titulo2 {
+        font-size: 28px;
+    }
+
+    .informações__botao {
+        display: flex;
+        
+    }
+
+    .informações__botao__orçamento {
+        margin-top: 5em;
+        padding: 2em 2.5em;
+    }
+
+    .informações__botao__orçamento:hover {
+        opacity: 0.8;
+
     }
 }
 
 @media screen and (min-width: 1728px) {
-    
-    .informações{
 
-        padding: 2.5em 0em ;
+    .informações__botao__orçamento {
+        margin-top: 2em;
+        font-size: 28px;
     }
 
-    .informações__descrição {
-        margin-left: 32em;
-    }
 
     .informações__titulo {
-        font-size: 24px;
+        font-size: 31px;
+        font-weight: 700;
+        margin-bottom: 1em;
+        
+        
     }
 
-    .informações__texto {
-        font-size: 16px;
+    .informações__texto{
+        font-size: 28px;
+        font-weight: 500;
+        
     }
 
-    .informações__email {
-        margin-right: 32em;
+    .informações__titulo2 {
+        font-size: 36px;
     }
 }
