@@ -13,6 +13,7 @@
     --fonte-principal: "Kalnia";
     --fonte-secundaria: "Montserrat";
     --marrom-degrade: linear-gradient(360deg, #623e2a 35.49%, #000000 165.37%);
+    --marrom-degrade2: linear-gradient(45deg, #623e2a 35.49%, #000000 165.37%);
     --laranja-claro: #F08D1F;
     --amarelo:#F0C31F;
     --preto:#000000;
