@@ -19,7 +19,7 @@
 </div>
 
 ## 🔗 Site do Projeto
-<a href="https://rock-bar-mobile-prototipo.vercel.app/#" target="_blank">RockBar</a>
+<a href="https://rockbarbartender-eight.vercel.app/" target="_blank">RockBar</a>
 
 
 ## 🫂 Time
